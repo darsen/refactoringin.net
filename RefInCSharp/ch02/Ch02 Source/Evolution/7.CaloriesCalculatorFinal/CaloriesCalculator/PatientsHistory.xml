@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PatientsHistory>
+	<patient ssn="33-333-3333" firstName="John" lastName="Doe">
+		<measurement date="05/27/2006">
+			<height>72</height>
+			<weight>210</weight>
+			<age>23</age>
+			<dailyCaloriesRecommended>1043.4</dailyCaloriesRecommended>
+			<idealBodyWeight>205.37988</idealBodyWeight>
+			<distanceFromIdealWeight>4.62012</distanceFromIdealWeight>
+			<!--Another measurement -->
+		</measurement>
+	</patient>
+	<!--Another patient -->
+</PatientsHistory>

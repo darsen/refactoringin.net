@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4F994AEF-2C44-4AF2-9608-E0123264B322}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RentAWheel</RootNamespace>
+    <AssemblyName>RentAWheel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractData.cs" />
+    <Compile Include="AbstractDataObjectsProvider.cs" />
+    <Compile Include="Branch.cs" />
+    <Compile Include="BranchData.cs" />
+    <Compile Include="BranchMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BranchMaintenance.designer.cs">
+      <DependentUpon>BranchMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs" />
+    <Compile Include="CategoryData.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="InvalidVehicleStateException.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="ModelData.cs" />
+    <Compile Include="MSSQLDataObjectsProvider.cs" />
+    <Compile Include="Operational.cs" />
+    <Compile Include="RentalState.cs" />
+    <Compile Include="TankLevel.cs" />
+    <Compile Include="Vehicle.cs" />
+    <Compile Include="VehicleCategoriesMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleCategoriesMaintenance.designer.cs">
+      <DependentUpon>VehicleCategoriesMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleChangeBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleChangeBranch.designer.cs">
+      <DependentUpon>VehicleChangeBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleetView.designer.cs">
+      <DependentUpon>FleetView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FleetMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FleetMaintenance.designer.cs">
+      <DependentUpon>FleetMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelMaintenance.designer.cs">
+      <DependentUpon>ModelMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleData.cs" />
+    <Compile Include="VehicleReception.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleReception.designer.cs">
+      <DependentUpon>VehicleReception.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleRental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleRental.designer.cs">
+      <DependentUpon>VehicleRental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BranchMaintenance.resx">
+      <DependentUpon>BranchMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleCategoriesMaintenance.resx">
+      <DependentUpon>VehicleCategoriesMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleChangeBranch.resx">
+      <DependentUpon>VehicleChangeBranch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetView.resx">
+      <DependentUpon>FleetView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FleetMaintenance.resx">
+      <DependentUpon>FleetMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelMaintenance.resx">
+      <DependentUpon>ModelMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleReception.resx">
+      <DependentUpon>VehicleReception.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VehicleRental.resx">
+      <DependentUpon>VehicleRental.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
