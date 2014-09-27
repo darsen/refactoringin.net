@@ -10,4 +10,3 @@ Check out my blog at:
 [Refactoringin.net](http://refactoringin.net)
 
 ![Book Cover](/RefInCSharp/cover.jpg?raw=true "Refactoring in C# and ASP .Net book cover")
-{:.some-css-class style="width: 200px; text-align: center;"}
